@@ -338,14 +338,34 @@
     "targets" : [ {
       "broker" : null,
       "clientScript" : {
-        "sysId" : "a5db0cb81b3b3010a047ca641a4bcb18"
+        "sysId" : "7f1050fc1b3b3010a047ca641a4bcb6e"
       },
       "conditional" : null,
       "declarativeAction" : null,
       "event" : null,
       "operation" : null,
-      "targetId" : "ckekiijhhgeeaaaabbffddhhhggnddxxhmgo",
+      "targetId" : "ckvtvddhjjkaaaaluddegguoiisniwey",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_snc_simulator_sa.NAV_ITEM_SELECTED_RELAY_1ddb88b81b3b3010a047ca641a4bcb23",
+        "payload" : {
+          "type" : "CLIENT_TRANSFORM_SCRIPT",
+          "script" : {
+            "apiVersion" : "1.0.0",
+            "inlineScript" : "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n* @param {any} params.imports\n*/\nfunction evaluateEvent({api, event}) {\n    // Get the KB article sys_id from the Objective record to load\n    var objSysID = event.payload.sys_id;\n    \n\treturn {\n        route: 'objective-details',\n        fields: {'sysId':objSysID},\n        params: null,\n        redirect: null,\n        passiveNavigation: null,\n        title: null,\n        multiInstField: null,\n        targetRoute: null,\n        external: null\n    };\n}",
+            "scriptSysId" : null
+          }
+        },
+        "sysId" : "c17d8cf81b3b3010a047ca641a4bcb18"
+      },
+      "operation" : null,
+      "targetId" : "ckvtyccddeddaaaaacddegguccggeeiiapaajj",
+      "type" : "EVENT"
     } ]
   }, {
     "eventMappingId" : "cknffhhtriicaaaabbaaddhiibbiddaqiigjtpreview",
@@ -754,7 +774,7 @@
   "valueType" : null,
   "mandatory" : false,
   "defaultValue" : null,
-  "description" : null,
+  "description" : "",
   "readOnly" : false,
   "selectable" : false,
   "disabled" : false
@@ -778,7 +798,7 @@
   "valueType" : null,
   "mandatory" : true,
   "defaultValue" : null,
-  "description" : null,
+  "description" : "",
   "readOnly" : false,
   "selectable" : false,
   "disabled" : false
@@ -876,13 +896,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-11-10 18:14:30</sys_created_on>
         <sys_id>1ddb88b81b3b3010a047ca641a4bcb23</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Simple List</sys_name>
         <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
         <sys_update_name>sys_ux_macroponent_1ddb88b81b3b3010a047ca641a4bcb23</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-10 18:21:38</sys_updated_on>
+        <sys_updated_on>2021-11-10 19:58:52</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
