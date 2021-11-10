@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Knowledge View">43ed8c3c1b3b3010a047ca641a4bcb16</macroponent>
+        <name>Execute validation flow</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    
+    (function() {
+	
+	var inputs = {};
+
+	inputs['suite_to_run'] = api.data.get_test_suite_1; // String 
+
+	GlideFlow.startSubflow('x_snc_simulator_sa.execute_test_suite', inputs)
+		.then(function(execution) {
+			return execution.awaitCompletion();
+		}, errorResolver)
+		.then(function(completion) {
+
+			var status = completion.status;
+
+		});
+
+	function errorResolver(error) {
+		// Handle errors in error resolver
+	}
+})();
+
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-10 20:26:41</sys_created_on>
+        <sys_id>d11a68741bbb3010a047ca641a4bcb84</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Execute validation flow</sys_name>
+        <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
+        <sys_update_name>sys_ux_client_script_d11a68741bbb3010a047ca641a4bcb84</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-10 21:10:36</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</application>
+        <file_path/>
+        <instance_id>ed8d2d802bbdbc04ecf7bb4f59da15ad</instance_id>
+        <instance_name>empbsweets</instance_name>
+        <name>sys_ux_client_script_d11a68741bbb3010a047ca641a4bcb84</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Knowledge View"&gt;43ed8c3c1b3b3010a047ca641a4bcb16&lt;/macroponent&gt;&lt;name&gt;Execute validation flow&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    
+    (function() {
+	
+	var inputs = {};
+
+	inputs['suite_to_run'] = api.data.get_test_suite_1; // String 
+
+	GlideFlow.startSubflow('x_snc_simulator_sa.execute_test_suite', inputs)
+		.then(function(execution) {
+			return execution.awaitCompletion();
+		}, errorResolver)
+		.then(function(completion) {
+
+			var status = completion.status;
+
+		});
+
+	function errorResolver(error) {
+		// Handle errors in error resolver
+	}
+})();
+
+
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-10 20:26:41&lt;/sys_created_on&gt;&lt;sys_id&gt;d11a68741bbb3010a047ca641a4bcb84&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Execute validation flow&lt;/sys_name&gt;&lt;sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa"&gt;18ab325c1bf73010b81fdce7cc4bcb9c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Simulator Sandbox"&gt;18ab325c1bf73010b81fdce7cc4bcb9c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_d11a68741bbb3010a047ca641a4bcb84&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-10 21:10:36&lt;/sys_updated_on&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>259796651</payload_hash>
+        <record_name>Execute validation flow</record_name>
+        <reverted_from/>
+        <source>2a95dfd41b7b3010b81fdce7cc4bcb61</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-10 21:10:37</sys_created_on>
+        <sys_id>f42478fc1bbb3010a047ca641a4bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d0bb0362b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-10 21:10:37</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>302478fcfbbb3010e3173a9b23e49d0b</update_guid>
+        <update_guid_history>302478fcfbbb3010e3173a9b23e49d0b:259796651,4fbda878edbb30101c1f5f8a1e947ce3:-1810935384,7b0c6cf4aabb30105ecdfd53a44b54c0:-1360842770,e00ce8f4b3bb3010536aa9398e46f1f5:893836704,58fba8f4b9bb3010bbd93277a772ccdf:1265359936,b83b6cb4c3bb3010eec346cebba3437c:1243503458,7b5a6c74d1bb3010f4d38f10a76ac644:951599732,9d1a687481bb301014959bad090a6ccd:809165659</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-10 21:47:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>33fda03206724010a385772a40765544</sys_id>
+        <sys_metadata>d11a68741bbb3010a047ca641a4bcb84</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Execute validation flow</sys_name>
+        <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
+        <sys_scope_delete display_value="">0313afe87c844bb6baf92f1a8a00c1a1</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_d11a68741bbb3010a047ca641a4bcb84</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_d11a68741bbb3010a047ca641a4bcb84">f42478fc1bbb3010a047ca641a4bcb0b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-10 21:47:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_simulator_sa.Execute Validation Flow</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Execute Validation Flow</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name":"testSuite",&#13;
+    "label":"Test Suite",&#13;
+    "description":"",&#13;
+    "readOnly":"false",&#13;
+    "fieldType":"string",&#13;
+    "mandatory":true,&#13;
+    "defaultValue":""&#13;
+  }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Test Suite",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    gs.error("MEBS input value " + input.testSuite);
+	try {
+        var inputs = {};
+        inputs['suite_to_run'] = input.testSuite; // String 
+
+        // Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+        //sn_fd.FlowAPI.getRunner().subflow('x_snc_simulator_sa.execute_test_suite').inBackground().withInputs(inputs).run();
+gs.error("MEBS subflow launched with (in try) " + input.testSuite);
+        // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+        var result = sn_fd.FlowAPI.getRunner().subflow('x_snc_simulator_sa.execute_test_suite').inForeground().withInputs(inputs).run();
+        var outputs = result.getOutputs();
+
+		
+		gs.error("MEBS subflow result " + result);
+        // Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		var all_feedback = outputs['all_feedback']; // String	
+		
+    } catch (ex) {
+        var message = ex.getMessage();
+        gs.error("MEBS subflow:" + message);
+    }
+	return all_feedback;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-10 21:14:48</sys_created_on>
+        <sys_id>5b543cfc1bbb3010a047ca641a4bcb96</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Execute Validation Flow</sys_name>
+        <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_5b543cfc1bbb3010a047ca641a4bcb96</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-10 22:07:03</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=5b543cfc1bbb3010a047ca641a4bcb96"/>
+</record_update>

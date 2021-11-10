@@ -882,7 +882,7 @@
         },
         "hideKbCategoryInfo" : {
           "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : true
         },
         "hideNumberLink" : {
           "type" : "JSON_LITERAL",
@@ -896,7 +896,7 @@
         },
         "hideAuthorInfo" : {
           "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : true
         },
         "hideActions" : {
           "type" : "JSON_LITERAL",
@@ -1043,7 +1043,7 @@
                   "type" : "TRANSLATION_LITERAL",
                   "value" : {
                     "code" : null,
-                    "message" : "Edit",
+                    "message" : "Validate Objectives",
                     "comment" : ""
                   }
                 },
@@ -1069,7 +1069,7 @@
                 }
               },
               "eventMappings" : [ {
-                "eventMappingId" : "ckfdyvrjjbbaaaaaasddhhhalddffnsnqv",
+                "eventMappingId" : "ckvubbaabblzaaaaeeqddeggugpliieeiirgg",
                 "isConfiguration" : false,
                 "offRowStorageId" : null,
                 "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
@@ -1085,68 +1085,43 @@
                   "clientScript" : null,
                   "conditional" : null,
                   "declarativeAction" : null,
-                  "event" : {
-                    "apiName" : "x_snc_simulator_sa.NAV_ITEM_SELECTED_RELAY_43ed8c3c1b3b3010a047ca641a4bcb16",
+                  "event" : null,
+                  "operation" : {
+                    "dataBrokerId" : "5b543cfc1bbb3010a047ca641a4bcb96",
+                    "operationName" : "REFRESH",
+                    "parentResourceId" : "execute_validation_flow_1",
                     "payload" : {
-                      "type" : "MAP_CONTAINER",
-                      "container" : {
-                        "route" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : "record"
-                        },
-                        "fields" : {
-                          "type" : "MAP_CONTAINER",
-                          "container" : {
-                            "table" : {
-                              "type" : "CONTEXT_BINDING",
-                              "binding" : {
-                                "address" : [ "table" ],
-                                "category" : "props"
-                              }
-                            },
-                            "sysId" : {
-                              "type" : "CONTEXT_BINDING",
-                              "binding" : {
-                                "address" : [ "sysId" ],
-                                "category" : "props"
-                              }
-                            }
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    }
+                  },
+                  "targetId" : "ckvubbaabblzaaaaeerddeggulaasplbwj",
+                  "type" : "DATABROKER_OP"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "conditional" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : {
+                        "items" : [ {
+                          "content" : {
+                            "type" : "html",
+                            "value" : "&lt;span&gt;Objective validation launched.&lt;/span&gt;"
+                          },
+                          "action" : {
+                            "type" : "dismiss"
                           }
-                        },
-                        "params" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : null
-                        },
-                        "redirect" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : null
-                        },
-                        "passiveNavigation" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : null
-                        },
-                        "title" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : null
-                        },
-                        "multiInstField" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : null
-                        },
-                        "targetRoute" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : "current"
-                        },
-                        "external" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : null
-                        }
+                        } ]
                       }
                     },
-                    "sysId" : "034e007c1b3b3010a047ca641a4bcb15"
+                    "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
                   },
                   "operation" : null,
-                  "targetId" : "ckfdyvrjjbbaaaaaatddhhhakziccclmhh",
+                  "targetId" : "ckvuccasnlaaaaeeiiddegguqjpwngcx",
                   "type" : "EVENT"
                 } ]
               } ],
@@ -1323,6 +1298,39 @@
       "styles" : {
         "padding-bottom" : "var(--now-global-space--lg, 16px)"
       }
+    }, {
+      "elementId" : "feedback_from_validation",
+      "elementLabel" : "Feedback from validation",
+      "propertyValues" : {
+        "text" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "validationFeedback" ]
+          }
+        },
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "p"
+        },
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* { }"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "footer",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : { }
     } ],
     "layout" : {
       "default" : {
@@ -2226,6 +2234,41 @@
     }
   },
   "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "3b86ec701bbb3010a047ca641a4bcbc5",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "get_test_suite_1",
+  "elementLabel" : "Get Test Suite 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "objectiveSysID" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "5b543cfc1bbb3010a047ca641a4bcb96",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "execute_validation_flow_1",
+  "elementLabel" : "Execute Validation Flow 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "testSuite" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "get_test_suite_1", "output" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
 } ]</data>
         <dispatched_events>034e007c1b3b3010a047ca641a4bcb15</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
@@ -2262,7 +2305,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"slotName":"Content","rules":{"grid-area":"content","min-height":"50px"},"styles":{"display":"flex"}},{"slotName":"Right rail","rules":{"grid-area":"right-rail","min-height":"50px"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "items" : [{"slotName":"Content","rules":{"grid-area":"content","min-height":"50px"},"styles":{"display":"flex","width":"auto","align-items":"center","margin":"20px 50px"}},{"slotName":"Right rail","rules":{"grid-area":"right-rail","min-height":"50px"},"styles":{"display":"flex","flex-direction":"column"}}],
     "root" : null,
     "rules" : {"height":"100%","grid-template-rows":"100%","grid-template-columns":"auto fit-content(25%)","grid-template-areas":"\"content right-rail\"","grid-gap":"calc(2 * var(--now-global-space--xl, 24px))"},
     "styles" : null,
@@ -2316,9 +2359,6 @@
   "message" : "Additional details",
   "comment" : ""
 }, {
-  "message" : "Edit",
-  "comment" : ""
-}, {
   "message" : "Flag Article",
   "comment" : ""
 }, {
@@ -2350,6 +2390,9 @@
   "comment" : ""
 }, {
   "message" : "The article is unclear",
+  "comment" : ""
+}, {
+  "message" : "Validate Objectives",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -2554,18 +2597,31 @@
     "type" : "JSON_LITERAL",
     "value" : ""
   }
+}, {
+  "name" : "validationFeedback",
+  "label" : "validationFeedback",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "DATA_OUTPUT_BINDING",
+    "binding" : {
+      "address" : [ "execute_validation_flow_1", "output" ]
+    }
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-11-10 18:23:39</sys_created_on>
         <sys_id>43ed8c3c1b3b3010a047ca641a4bcb16</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Knowledge View</sys_name>
         <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
         <sys_update_name>sys_ux_macroponent_43ed8c3c1b3b3010a047ca641a4bcb16</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-10 19:51:50</sys_updated_on>
+        <sys_updated_on>2021-11-10 23:06:43</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
