@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Simulation Objective" max_length="40" name="x_snc_simulator_sa_simulation_objective" type="collection">
+        <element display="true" label="Objective description" max_length="100" name="objective_description" type="string"/>
+        <element attributes="ref_ac_columns=short_description,ref_ac_order_by=number" label="Objective details" max_length="32" name="objective_details" reference="kb_knowledge" reference_qual="kb_knowledge_base=ea92bfa01bf73010a047ca641a4bcb1a^EQ" reference_qual_condition="kb_knowledge_base=ea92bfa01bf73010a047ca641a4bcb1a^EQ" type="reference"/>
+        <element label="Simulation app" max_length="32" name="simulation_app" reference="x_snc_simulator_sa_simulation_app" type="reference"/>
+        <element label="Test suite" max_length="100" name="test_suite" type="string"/>
+        <index name="index">
+            <element name="simulation_app"/>
+        </index>
+        <index name="index2">
+            <element name="objective_details"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Simulation App" max_length="40" name="x_snc_simulator_sa_simulation_app" type="collection">
+        <element label="Overview" max_length="4000" name="overview" type="string"/>
+        <element display="true" label="Title" max_length="100" name="title" type="string"/>
+    </element>
+</database>
