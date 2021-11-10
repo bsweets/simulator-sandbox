@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Learning Validator config">1d25b3641bf73010a047ca641a4bcbe9</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckvtqyviivaaaaddwddegguffjumtccmt",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_snc_simulator_sa.NAV_ITEM_SELECTED_RELAY_1fb5f7641bf73010a047ca641a4bcb75",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "x_snc_simulator_sa.NAV_ITEM_SELECTED_RELAY_1fb5f7641bf73010a047ca641a4bcb75",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "ckvtqyviiuaaaaddvddeggumggddpuuax",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Simple List">1fb5f7641bf73010a047ca641a4bcb75</macroponent>
+        <macroponent_config>{
+  "listView" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>home default</name>
+        <order>0</order>
+        <parent_macroponent display_value="UXR Blank AppShell(To be deprecated)">fee17a0f5b130010b913cbd59b81c7c2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="home">cfb5f7641bf73010a047ca641a4bcb70</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-10 16:37:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57b5f7641bf73010a047ca641a4bcb78</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>home default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
+        <sys_update_name>sys_ux_screen_57b5f7641bf73010a047ca641a4bcb78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-10 16:39:15</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=57b5f7641bf73010a047ca641a4bcb78"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</application>
+        <file_path/>
+        <instance_id>ed8d2d802bbdbc04ecf7bb4f59da15ad</instance_id>
+        <instance_name>empbsweets</instance_name>
+        <name>sys_ux_screen_57b5f7641bf73010a047ca641a4bcb78</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Learning Validator config">1d25b3641bf73010a047ca641a4bcbe9</app_config><description/><event_mappings>[ {
+  "eventMappingId" : "ckvtqyviivaaaaddwddegguffjumtccmt",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_snc_simulator_sa.NAV_ITEM_SELECTED_RELAY_1fb5f7641bf73010a047ca641a4bcb75",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "x_snc_simulator_sa.NAV_ITEM_SELECTED_RELAY_1fb5f7641bf73010a047ca641a4bcb75",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "ckvtqyviiuaaaaddvddeggumggddpuuax",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings><macroponent display_value="Simple List">1fb5f7641bf73010a047ca641a4bcb75</macroponent><macroponent_config>{
+  "listView" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>home default</name><order>0</order><parent_macroponent display_value="UXR Blank AppShell(To be deprecated)">fee17a0f5b130010b913cbd59b81c7c2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="home">cfb5f7641bf73010a047ca641a4bcb70</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-11-10 16:37:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>57b5f7641bf73010a047ca641a4bcb78</sys_id><sys_mod_count>1</sys_mod_count><sys_name>home default</sys_name><sys_overrides/><sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package><sys_policy/><sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope><sys_update_name>sys_ux_screen_57b5f7641bf73010a047ca641a4bcb78</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-11-10 16:39:15</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=57b5f7641bf73010a047ca641a4bcb78"/></record_update>]]></payload>
+        <payload_hash>-1637698151</payload_hash>
+        <record_name>home default</record_name>
+        <reverted_from/>
+        <source>2a95dfd41b7b3010b81fdce7cc4bcb61</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-10 16:39:15</sys_created_on>
+        <sys_id>b50673a41bf73010a047ca641a4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d0ab7c4720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-10 16:39:15</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>fd0673a43cf730100572c942d9e21eb4</update_guid>
+        <update_guid_history>fd0673a43cf730100572c942d9e21eb4:-1637698151,57b5fb645cf73010262358a1b4ac995d:1793806206</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-10 18:11:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>5feb07baa0c94e74af94bbf98fc97824</sys_id>
+        <sys_metadata>57b5f7641bf73010a047ca641a4bcb78</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>home default</sys_name>
+        <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
+        <sys_scope_delete display_value="">0313afe87c844bb6baf92f1a8a00c1a1</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_57b5f7641bf73010a047ca641a4bcb78</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_57b5f7641bf73010a047ca641a4bcb78">b50673a41bf73010a047ca641a4bcbb5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-10 18:11:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
