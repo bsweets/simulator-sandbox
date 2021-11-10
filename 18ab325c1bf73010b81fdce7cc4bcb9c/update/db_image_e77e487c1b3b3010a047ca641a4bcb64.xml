@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>64</height>
+        <image/>
+        <name>Collector.png</name>
+        <size_bytes>1647</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>me.niedzielski@snc</sys_created_by>
+        <sys_created_on>2021-11-10 18:26:08</sys_created_on>
+        <sys_id>e77e487c1b3b3010a047ca641a4bcb64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Collector.png</sys_name>
+        <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
+        <sys_update_name>db_image_e77e487c1b3b3010a047ca641a4bcb64</sys_update_name>
+        <sys_updated_by>me.niedzielski@snc</sys_updated_by>
+        <sys_updated_on>2021-11-10 18:26:08</sys_updated_on>
+        <thumbnail/>
+        <width>65</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#40605b</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <hash>357201eb250ef0e1bee238e98b57d03403ed684567f765ae45e6e9c70ebdaac2</hash>
+        <image_height>64</image_height>
+        <image_width>65</image_width>
+        <size_bytes>1647</size_bytes>
+        <size_compressed>1645</size_compressed>
+        <state>available</state>
+        <sys_created_by>me.niedzielski@snc</sys_created_by>
+        <sys_created_on>2021-11-10 18:26:08</sys_created_on>
+        <sys_id>6f7e487c1b3b3010a047ca641a4bcb66</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>me.niedzielski@snc</sys_updated_by>
+        <sys_updated_on>2021-11-10 18:26:09</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>e77e487c1b3b3010a047ca641a4bcb64</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="6f7e487c1b3b3010a047ca641a4bcb66">6f7e487c1b3b3010a047ca641a4bcb66</sys_attachment>
+        <sys_created_by>me.niedzielski@snc</sys_created_by>
+        <sys_created_on>2021-11-10 18:26:08</sys_created_on>
+        <sys_id>af7e487c1b3b3010a047ca641a4bcb66</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2180</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="6f7e487c1b3b3010a047ca641a4bcb66">6f7e487c1b3b3010a047ca641a4bcb66</sys_attachment>
+        <sys_created_by>me.niedzielski@snc</sys_created_by>
+        <sys_created_on>2021-11-10 18:26:08</sys_created_on>
+        <sys_id>237e487c1b3b3010a047ca641a4bcb67</sys_id>
+    </sys_attachment_doc>
+</record_update>
