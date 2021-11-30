@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Validation Result" max_length="40" name="x_snc_simulator_sa_validation_result" sizeclass="2" type="collection">
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Test suite" max_length="32" name="test_suite" reference="sys_atf_test_suite" type="reference"/>
+        <element label="Test suite result" max_length="32" name="test_suite_result" reference="sys_atf_test_suite_result" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="test_suite"/>
+        </index>
+        <index name="index2">
+            <element name="test_suite_result"/>
+        </index>
+        <index name="index3">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

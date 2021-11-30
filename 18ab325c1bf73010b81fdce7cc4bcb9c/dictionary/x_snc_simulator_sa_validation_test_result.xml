@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Validation Test Result" max_length="40" name="x_snc_simulator_sa_validation_test_result" sizeclass="1" type="collection">
+        <element label="Feedback" max_length="4000" name="feedback" type="string"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Validation result" max_length="32" name="validation_result" reference="x_snc_simulator_sa_validation_result" type="reference"/>
+        <index name="index">
+            <element name="validation_result"/>
+        </index>
+    </element>
+</database>

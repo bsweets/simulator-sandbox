@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_simulator_sa_validation_result" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Validation Result - Default view" name="x_snc_simulator_sa_validation_result" related_list="NULL" sys_domain="global" view="Default view">61d86e9d1b3b3010a047ca641a4bcb61</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_snc_simulator_sa_validation_test_result.validation_result</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-12 18:57:27</sys_created_on>
+            <sys_id>65d86e9d1b3b3010a047ca641a4bcb62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-12 18:57:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Validation Result - Default view</calculated_name>
+            <filter/>
+            <name>x_snc_simulator_sa_validation_result</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-12 18:57:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61d86e9d1b3b3010a047ca641a4bcb61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Validation Result - Default view</sys_name>
+            <sys_package display_value="Simulator Sandbox" source="x_snc_simulator_sa">18ab325c1bf73010b81fdce7cc4bcb9c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Simulator Sandbox">18ab325c1bf73010b81fdce7cc4bcb9c</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_simulator_sa_validation_result_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-12 18:57:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>
